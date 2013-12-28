@@ -1,0 +1,35 @@
+{
+  "name": "gulp-jscoverage",
+  "version": "0.1.0",
+  "description": "JSCoverage instrumentation plugin for Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yyx990803/gulp-jscoverage"
+  },
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "cli",
+    "jscoverage",
+    "test"
+  ],
+  "author": "Evan You",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yyx990803/gulp-jscoverage/issues"
+  },
+  "homepage": "https://github.com/yyx990803/gulp-jscoverage",
+  "dependencies": {
+    "jscoverage": "~0.3.8",
+    "map-stream": "0.0.4"
+  },
+  "devDependencies": {
+    "should": "~2.1.1",
+    "mocha": "~1.16.2",
+    "vinyl": "~0.2.0"
+  }
+}
