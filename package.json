@@ -13,7 +13,6 @@
   "keywords": [
     "gulpplugin",
     "gulp",
-    "cli",
     "jscoverage",
     "test"
   ],
