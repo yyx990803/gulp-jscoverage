@@ -5,12 +5,13 @@
 
 ``` js
 var gulp = require('gulp'),
-	jsc  = require('gulp-coverage)
+	jsc  = require('gulp-coverage')
 
 gulp.task('jsc', function () {
 	gulp.src('./src.js')
 		.pipe(jsc())
-		.pipe(gulp.dest('./')) // default file name: src-cov.js})
+		.pipe(gulp.dest('./')) // default file name: src-cov.js
+})
 ```
 
 ## API

@@ -9,10 +9,19 @@ describe('gulp-jscoverage', function () {
         it('should instrument the passed in file', function (done) {
             testStream(jsc(), [
                 function (file) {
+                    file.relative.should.equal('src-cov.js')
                     var content = file.contents.toString()
                     eval(content)
                     should.exist(global._$jscoverage)
                     global._$jscoverage.should.have.property('./test/fixture/src.js')
+                }
+            ], done)
+        })
+
+        it('should respect the name argument', function (done) {
+            testStream(jsc('custom.js'), [
+                function (file) {
+                    file.relative.should.equal('custom.js')
                 }
             ], done)
         })
