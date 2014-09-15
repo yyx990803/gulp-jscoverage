@@ -5,7 +5,7 @@
 
 ``` js
 var gulp = require('gulp'),
-	jsc  = require('gulp-coverage')
+	jsc  = require('gulp-jscoverage')
 
 gulp.task('jsc', function () {
 	gulp.src('./src.js')
